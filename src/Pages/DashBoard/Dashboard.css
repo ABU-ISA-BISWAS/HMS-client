@@ -1,0 +1,21 @@
+.active-link {
+   
+    background-color: rgb(17,24,39);
+    border: none;
+    outline: none;
+    /* border-left: 4px solid rgb(118, 11, 248); */
+    list-style: none;
+    display: block;
+  }
+ 
+  .link{
+    text-decoration: none;
+  }
+  .sidebar{
+    margin-left: 0px;
+    padding-left: 0px;
+
+  }
+  .signOut{
+    display: inline-flex;
+  }
