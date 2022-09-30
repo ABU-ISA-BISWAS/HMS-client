@@ -11,7 +11,7 @@ const CheckoutForm = ({appointment}) => {
     const [transactionId,setTransactionId]=useState('');
     const [clientSecret,setClientSecret] = useState('');
     useEffect(()=>{
-        fetch(' http://localhost:5000/create-payment-intent',{
+        fetch(' https://powerful-plateau-90073.herokuapp.com/create-payment-intent',{
             method:'POST',
             headers:{
                 'content-type':'application/json',
@@ -76,7 +76,7 @@ const CheckoutForm = ({appointment}) => {
                       phone:phone,
                       email:patient
                   }
-                  fetch(` http://localhost:5000/booking/${_id}`,{
+                  fetch(` https://powerful-plateau-90073.herokuapp.com/booking/${_id}`,{
                       method:'PATCH',
                       headers:{
                         'content-type':'application/json',

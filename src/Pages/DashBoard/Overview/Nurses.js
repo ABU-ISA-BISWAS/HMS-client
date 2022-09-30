@@ -4,7 +4,7 @@ import Loading from '../../Shared/Loading';
 import nurseIcon from '../../../assets/icons/nurse.png';
 
 const Nurses = () => {
-  const { data: nurses, isLoading, refetch } = useQuery('nurses', () => fetch(' http://localhost:5000/nurse', {
+  const { data: nurses, isLoading, refetch } = useQuery('nurses', () => fetch(' https://powerful-plateau-90073.herokuapp.com/nurse', {
         headers: {
 
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

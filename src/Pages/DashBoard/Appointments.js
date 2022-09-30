@@ -8,7 +8,7 @@ import DeleteAppointmentModal from './DeleteAppointmentModal';
 const Appointments = () => {
     let [Appointments, setAppointments] = useState([]);
     const [deletingAppointment ,setDeletingAppointment]=useState(null);
-    let {data:appointments,isLoading,refetch}=useQuery('appointments',()=>fetch(' http://localhost:5000/appointment',{
+    let {data:appointments,isLoading,refetch}=useQuery('appointments',()=>fetch(' https://powerful-plateau-90073.herokuapp.com/appointment',{
         headers:{
           
             authorization:`Bearer ${localStorage.getItem('accessToken')}`
@@ -22,7 +22,7 @@ const Appointments = () => {
         
         const search = e.target.text.value;
         
-        fetch(` http://localhost:5000/appointments?phone=${search}`)
+        fetch(` https://powerful-plateau-90073.herokuapp.com/appointments?phone=${search}`)
           .then(res => res.json())
           .then(data => {
             setAppointments(data)

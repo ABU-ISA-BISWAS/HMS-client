@@ -18,7 +18,7 @@ const BedAllotmentModal = ({ BedAllotment, refetch, setBedAllotment }) => {
             allotmentDate:cDate,
             allotmentTime:cTime
         }
-        fetch(` http://localhost:5000/patient/${_id}`, {
+        fetch(` https://powerful-plateau-90073.herokuapp.com/patient/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',

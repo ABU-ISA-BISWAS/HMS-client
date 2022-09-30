@@ -4,7 +4,7 @@ import Loading from '../../Shared/Loading';
 import pharmacistIcon from '../../../assets/icons/pharmacist.png';
 
 const Pharmacists = () => {
-  const { data: pharmacists, isLoading, refetch } = useQuery('pharmacists', () => fetch(' http://localhost:5000/pharmacist', {
+  const { data: pharmacists, isLoading, refetch } = useQuery('pharmacists', () => fetch(' https://powerful-plateau-90073.herokuapp.com/pharmacist', {
         headers: {
 
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

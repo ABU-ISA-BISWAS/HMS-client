@@ -36,8 +36,8 @@ class Invoice extends Component {
   // }
 
   // createAndDownloadPdf = () => {
-  //   axios.post(' http://localhost:5000/create-pdf', this.state)
-  //     .then(() => axios.get(' http://localhost:5000/fetch-pdf', { responseType: 'blob' }))
+  //   axios.post(' https://powerful-plateau-90073.herokuapp.com/create-pdf', this.state)
+  //     .then(() => axios.get(' https://powerful-plateau-90073.herokuapp.com/fetch-pdf', { responseType: 'blob' }))
   //     .then((res) => {
   //       const pdfBlob = new Blob([res.data], { type: 'application/pdf' });
 

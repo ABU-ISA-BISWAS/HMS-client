@@ -9,7 +9,7 @@ import remove from '../../assets/icons/delete.png';
 const Doctor = () => {
   let [Doctors, setDoctors] = useState([]);
   const [deletingDoctor ,setDeletingDoctor]=useState(null);
-  const {data:doctors,isLoading,refetch}=useQuery('doctors',()=>fetch(' http://localhost:5000/doctor',{
+  const {data:doctors,isLoading,refetch}=useQuery('doctors',()=>fetch(' https://powerful-plateau-90073.herokuapp.com/doctor',{
       headers:{
         
           authorization:`Bearer ${localStorage.getItem('accessToken')}`
@@ -23,7 +23,7 @@ const Doctor = () => {
     
     const search = e.target.text.value;
     
-    fetch(` http://localhost:5000/doctors?name=${search}`)
+    fetch(` https://powerful-plateau-90073.herokuapp.com/doctors?name=${search}`)
       .then(res => res.json())
       .then(data => {
         setDoctors(data)

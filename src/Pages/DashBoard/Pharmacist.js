@@ -8,7 +8,7 @@ import DeletePharmacistModal from './DeletePharmacistModal';
 const Pharmacist = () => {
     let [Pharmacists, setPharmacists] = useState([]);
     const [deletingPharmacist, setDeletingPharmacist] = useState(null);
-    const { data: pharmacists, isLoading, refetch } = useQuery('pharmacists', () => fetch(' http://localhost:5000/pharmacist', {
+    const { data: pharmacists, isLoading, refetch } = useQuery('pharmacists', () => fetch(' https://powerful-plateau-90073.herokuapp.com/pharmacist', {
         headers: {
 
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -22,7 +22,7 @@ const Pharmacist = () => {
         
         const search = e.target.text.value;
         
-        fetch(` http://localhost:5000/pharmacists?name=${search}`)
+        fetch(` https://powerful-plateau-90073.herokuapp.com/pharmacists?name=${search}`)
           .then(res => res.json())
           .then(data => {
             setPharmacists(data)

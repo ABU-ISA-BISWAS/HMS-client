@@ -32,7 +32,7 @@ const AddAccountant = () => {
                    img:img
                }
                //send to your database
-               fetch(' http://localhost:5000/accountant',{
+               fetch(' https://powerful-plateau-90073.herokuapp.com/accountant',{
                    method:'POST',
                    headers:{
                        'content-type':'application/json',

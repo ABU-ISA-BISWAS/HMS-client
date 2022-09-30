@@ -4,7 +4,7 @@ import Loading from '../../Shared/Loading';
 import receptionistIcon from '../../../assets/icons/receptionist.png';
 
 const Receptionists = () => {
-  const { data: receptionists, isLoading, refetch } = useQuery('receptionists', () => fetch(' http://localhost:5000/receptionist', {
+  const { data: receptionists, isLoading, refetch } = useQuery('receptionists', () => fetch(' https://powerful-plateau-90073.herokuapp.com/receptionist', {
         headers: {
 
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

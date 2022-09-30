@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const DeleteUserConfirmModal = ({deletingUser,refetch,setDeletingUser}) => {
   const handleDelete=(email) => {
-    fetch(` http://localhost:5000/user/${email}`,{
+    fetch(` https://powerful-plateau-90073.herokuapp.com/user/${email}`,{
         method:'DELETE',
         headers:{
           

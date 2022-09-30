@@ -32,7 +32,7 @@ const AddLaboratorist = () => {
                    img:img
                }
                //send to your database
-               fetch(' http://localhost:5000/laboratorist',{
+               fetch(' https://powerful-plateau-90073.herokuapp.com/laboratorist',{
                    method:'POST',
                    headers:{
                        'content-type':'application/json',

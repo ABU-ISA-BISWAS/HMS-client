@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteAppointmentModal = ({deletingAppointment,refetch,setDeletingAppointment}) => {
   const {patientName}=deletingAppointment;
   const handleDelete=(patient) => {
-    fetch(` http://localhost:5000/appointment/${patient}`,{
+    fetch(` https://powerful-plateau-90073.herokuapp.com/appointment/${patient}`,{
         method:'DELETE',
         headers:{
           

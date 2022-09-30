@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Loading from '../Shared/Loading';
 
 const BedAllotment = () => {
-    let {data:bedAllotments,isLoading,refetch}=useQuery('bedAllotments',()=>fetch(' http://localhost:5000/bedAllotment',{
+    let {data:bedAllotments,isLoading,refetch}=useQuery('bedAllotments',()=>fetch(' https://powerful-plateau-90073.herokuapp.com/bedAllotment',{
         headers:{
           
             authorization:`Bearer ${localStorage.getItem('accessToken')}`

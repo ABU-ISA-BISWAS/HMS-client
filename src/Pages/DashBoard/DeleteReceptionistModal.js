@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteReceptionistModal = ({deletingReceptionist,refetch,setDeletingReceptionist}) => {
   const {name}=deletingReceptionist;
   const handleDelete=(email,name) => {
-    fetch(` http://localhost:5000/receptionist/${email}`,{
+    fetch(` https://powerful-plateau-90073.herokuapp.com/receptionist/${email}`,{
         method:'DELETE',
         headers:{
           

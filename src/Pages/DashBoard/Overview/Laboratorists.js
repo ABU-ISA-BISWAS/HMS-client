@@ -4,7 +4,7 @@ import Loading from '../../Shared/Loading';
 import labIcon from '../../../assets/icons/lab.png';
 
 const Laboratorists = () => {
-  const { data: laboratorists, isLoading, refetch } = useQuery('laboratorists', () => fetch(' http://localhost:5000/laboratorist', {
+  const { data: laboratorists, isLoading, refetch } = useQuery('laboratorists', () => fetch(' https://powerful-plateau-90073.herokuapp.com/laboratorist', {
         headers: {
 
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
