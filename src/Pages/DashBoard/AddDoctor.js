@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 
 const AddDoctor = () => {
     const { register, formState: { errors }, handleSubmit,reset } = useForm();
-    const { data: services, isLoading } = useQuery('services', () => fetch(' https://powerful-plateau-90073.herokuapp.com/service').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch(' https://hospital-management-9ou8.onrender.com/service').then(res => res.json()))
     const imgStorageKey ='2020a41af86572042a381fac5a0d0d99';
 
     if (isLoading) {
@@ -38,7 +38,7 @@ const AddDoctor = () => {
                    img:img
                }
                //send to your database
-               fetch(' https://powerful-plateau-90073.herokuapp.com/doctor',{
+               fetch(' https://hospital-management-9ou8.onrender.com/doctor',{
                    method:'POST',
                    headers:{
                        'content-type':'application/json',

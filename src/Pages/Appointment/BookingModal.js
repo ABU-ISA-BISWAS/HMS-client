@@ -22,7 +22,7 @@ const BookingModal = ({ treatment, date,setTreatment,refetch }) => {
             phone:event.target.phone.value,
             paid:'unpaid'
         }
-        fetch(' https://powerful-plateau-90073.herokuapp.com/booking',{
+        fetch(' https://hospital-management-9ou8.onrender.com/booking',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

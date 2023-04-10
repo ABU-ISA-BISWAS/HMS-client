@@ -6,7 +6,7 @@ import BedAllotmentModal from './BedAllotmentModal';
 
 const BedManagement = () => {
     const [BedAllotment ,setBedAllotment]=useState(null);
-    let {data:patients,isLoading,refetch}=useQuery('patients',()=>fetch(' https://powerful-plateau-90073.herokuapp.com/patient',{
+    let {data:patients,isLoading,refetch}=useQuery('patients',()=>fetch(' https://hospital-management-9ou8.onrender.com/patient',{
         headers:{
           
             authorization:`Bearer ${localStorage.getItem('accessToken')}`

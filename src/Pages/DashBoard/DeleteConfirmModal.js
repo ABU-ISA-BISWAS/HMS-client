@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteConfirmModa = ({deletingDoctor,refetch,setDeletingDoctor}) => {
   const {name}=deletingDoctor;
   const handleDelete=(email,name) => {
-    fetch(` https://powerful-plateau-90073.herokuapp.com/doctor/${email}`,{
+    fetch(` https://hospital-management-9ou8.onrender.com/doctor/${email}`,{
         method:'DELETE',
         headers:{
           

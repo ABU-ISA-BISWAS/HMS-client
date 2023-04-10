@@ -10,7 +10,7 @@ import DeleteReceptionistModal from './DeleteReceptionistModal';
 const Receptionist = () => {
     let [Receptionists, setReceptionists] = useState([]);
     const [deletingReceptionist, setDeletingReceptionist] = useState(null);
-    const { data: receptionists, isLoading, refetch } = useQuery('receptionists', () => fetch(' https://powerful-plateau-90073.herokuapp.com/receptionist', {
+    const { data: receptionists, isLoading, refetch } = useQuery('receptionists', () => fetch(' https://hospital-management-9ou8.onrender.com/receptionist', {
         headers: {
 
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -24,7 +24,7 @@ const Receptionist = () => {
         
         const search = e.target.text.value;
         
-        fetch(` https://powerful-plateau-90073.herokuapp.com/receptionists?name=${search}`)
+        fetch(` https://hospital-management-9ou8.onrender.com/receptionists?name=${search}`)
           .then(res => res.json())
           .then(data => {
             setReceptionists(data)

@@ -32,7 +32,7 @@ const AddPharmacist = () => {
                    img:img
                }
                //send to your database
-               fetch(' https://powerful-plateau-90073.herokuapp.com/pharmacist',{
+               fetch(' https://hospital-management-9ou8.onrender.com/pharmacist',{
                    method:'POST',
                    headers:{
                        'content-type':'application/json',

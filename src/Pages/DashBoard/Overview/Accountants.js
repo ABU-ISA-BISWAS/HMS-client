@@ -4,7 +4,7 @@ import Loading from '../../Shared/Loading';
 import accountantIcon from '../../../assets/icons/accountant.png';
 
 const Accountants = () => {
-  const { data: accountants, isLoading, refetch } = useQuery('accountants', () => fetch(' https://powerful-plateau-90073.herokuapp.com/accountant', {
+  const { data: accountants, isLoading, refetch } = useQuery('accountants', () => fetch(' https://hospital-management-9ou8.onrender.com/accountant', {
         headers: {
 
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

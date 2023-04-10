@@ -11,7 +11,7 @@ const MyAppointments = () => {
     const navigate =useNavigate();
     useEffect(()=>{
         if(user){
-            fetch(` https://powerful-plateau-90073.herokuapp.com/booking?patient=${user.email}`,{
+            fetch(` https://hospital-management-9ou8.onrender.com/booking?patient=${user.email}`,{
               method:'GET',
               headers:{
                 'authorization':`Bearer ${localStorage.getItem('accessToken')}`

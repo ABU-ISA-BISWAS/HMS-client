@@ -9,13 +9,13 @@ const AvailableAppointments = ({date}) => {
     // const [services,setServices]=useState([]);
     const [treatment,setTreatment]=useState(null);
     const formattedDate =format(date,'PP');
-    const {data:services,isLoading,refetch}=useQuery(['available',formattedDate],()=>fetch(` https://powerful-plateau-90073.herokuapp.com/available?date=${formattedDate}`)
+    const {data:services,isLoading,refetch}=useQuery(['available',formattedDate],()=>fetch(` https://hospital-management-9ou8.onrender.com/available?date=${formattedDate}`)
          .then(res=> res.json()))
          if(isLoading){
              return <Loading></Loading>
          }
     // useEffect(()=>{
-    //     fetch(` https://powerful-plateau-90073.herokuapp.com/available?date=${formattedDate}`)
+    //     fetch(` https://hospital-management-9ou8.onrender.com/available?date=${formattedDate}`)
     //     .then(res=> res.json())
     //     .then(data=>setServices(data));
     // },[formattedDate]);

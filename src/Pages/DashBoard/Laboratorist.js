@@ -9,7 +9,7 @@ import DeleteLaboratoristModal from './DeleteLaboratoristModal';
 const Laboratorist = () => {
     let [Laboratorists, setLaboratorists] = useState([]);
     const [deletingLaboratorist, setDeletingLaboratorist] = useState(null);
-    const { data: laboratorists, isLoading, refetch } = useQuery('laboratorists', () => fetch(' https://powerful-plateau-90073.herokuapp.com/laboratorist', {
+    const { data: laboratorists, isLoading, refetch } = useQuery('laboratorists', () => fetch(' https://hospital-management-9ou8.onrender.com/laboratorist', {
         headers: {
 
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -23,7 +23,7 @@ const Laboratorist = () => {
         
         const search = e.target.text.value;
         
-        fetch(` https://powerful-plateau-90073.herokuapp.com/laboratorists?name=${search}`)
+        fetch(` https://hospital-management-9ou8.onrender.com/laboratorists?name=${search}`)
           .then(res => res.json())
           .then(data => {
             setLaboratorists(data)

@@ -32,7 +32,7 @@ const AddAccountant = () => {
                    img:img
                }
                //send to your database
-               fetch(' https://powerful-plateau-90073.herokuapp.com/accountant',{
+               fetch(' https://hospital-management-9ou8.onrender.com/accountant',{
                    method:'POST',
                    headers:{
                        'content-type':'application/json',

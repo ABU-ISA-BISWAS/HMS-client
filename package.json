@@ -2,7 +2,7 @@
   "name": "doctors-portal-client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://powerful-plateau-90073.herokuapp.com/",
+  "proxy": "https://hospital-management-9ou8.onrender.com/",
   "dependencies": {
     "@stripe/react-stripe-js": "^1.8.1",
     "@stripe/stripe-js": "^1.30.0",

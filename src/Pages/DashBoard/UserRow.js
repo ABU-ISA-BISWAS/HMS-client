@@ -8,7 +8,7 @@ const UserRow = ({user,index,refetch}) => {
     const [deletingUser ,setDeletingUser]=useState(null);
     const {email,role}=user;
     const makeAdmin =()=>{
-        fetch(` https://powerful-plateau-90073.herokuapp.com/user/admin/${email}`,{
+        fetch(` https://hospital-management-9ou8.onrender.com/user/admin/${email}`,{
         method:'PUT',
         headers:{
             authorization:`Bearer ${localStorage.getItem('accessToken')}`

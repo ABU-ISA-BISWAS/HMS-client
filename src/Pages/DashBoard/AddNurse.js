@@ -32,7 +32,7 @@ const AddNurse = () => {
                    img:img
                }
                //send to your database
-               fetch(' https://powerful-plateau-90073.herokuapp.com/nurse',{
+               fetch(' https://hospital-management-9ou8.onrender.com/nurse',{
                    method:'POST',
                    headers:{
                        'content-type':'application/json',

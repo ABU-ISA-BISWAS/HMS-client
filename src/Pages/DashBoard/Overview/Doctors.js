@@ -4,7 +4,7 @@ import Loading from '../../Shared/Loading';
 import doctor from '../../../assets/icons/doctor.png';
 
 const Doctors = () => {
-    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch(' https://powerful-plateau-90073.herokuapp.com/doctor', {
+    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch(' https://hospital-management-9ou8.onrender.com/doctor', {
         headers: {
 
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

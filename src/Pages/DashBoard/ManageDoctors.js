@@ -8,7 +8,7 @@ import remove from '../../assets/icons/delete.png';
 
 const ManageDoctors = () => {
     const [deletingDoctor ,setDeletingDoctor]=useState(null);
-    const {data:doctors,isLoading,refetch}=useQuery('doctors',()=>fetch(' https://powerful-plateau-90073.herokuapp.com/doctor',{
+    const {data:doctors,isLoading,refetch}=useQuery('doctors',()=>fetch(' https://hospital-management-9ou8.onrender.com/doctor',{
         headers:{
           
             authorization:`Bearer ${localStorage.getItem('accessToken')}`

@@ -135,6 +135,8 @@ const Login = () => {
                             <input className='btn btn-sm hover:bg-sky-400 w-full bg-indigo-600 text-white max-w-xs' type="submit" value="Login" />
                             <p>Forgotten password? <button onClick={resetPassword} className="text-red-500">Reset Password</button></p>
                         </form>
+                        {/****************************************************************/}
+                       
 
                         <p>Don't Have an Account? <Link className='text-primary' to="/signup">Create new account</Link></p>
 

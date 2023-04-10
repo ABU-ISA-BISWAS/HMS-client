@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteAccountantModal = ({deletingAccountant,refetch,setDeletingAccountant}) => {
   const {name}=deletingAccountant;
   const handleDelete=(email,name) => {
-    fetch(` https://powerful-plateau-90073.herokuapp.com/accountant/${email}`,{
+    fetch(` https://hospital-management-9ou8.onrender.com/accountant/${email}`,{
         method:'DELETE',
         headers:{
           

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteLaboratoristModal = ({deletingLaboratorist,refetch,setDeletingLaboratorist}) => {
   const {name}=deletingLaboratorist;
   const handleDelete=(email,name) => {
-    fetch(` https://powerful-plateau-90073.herokuapp.com/laboratorist/${email}`,{
+    fetch(` https://hospital-management-9ou8.onrender.com/laboratorist/${email}`,{
         method:'DELETE',
         headers:{
           

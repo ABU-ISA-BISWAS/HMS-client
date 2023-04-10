@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
 
 const Payments = () => {
-    let {data:payments,isLoading,refetch}=useQuery('payments',()=>fetch(' https://powerful-plateau-90073.herokuapp.com/payment',{
+    let {data:payments,isLoading,refetch}=useQuery('payments',()=>fetch(' https://hospital-management-9ou8.onrender.com/payment',{
         headers:{
           
             authorization:`Bearer ${localStorage.getItem('accessToken')}`

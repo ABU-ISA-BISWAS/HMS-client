@@ -32,7 +32,7 @@ const AddLaboratorist = () => {
                    img:img
                }
                //send to your database
-               fetch(' https://powerful-plateau-90073.herokuapp.com/laboratorist',{
+               fetch(' https://hospital-management-9ou8.onrender.com/laboratorist',{
                    method:'POST',
                    headers:{
                        'content-type':'application/json',

@@ -11,7 +11,7 @@ import DeletePatientModal from './DeletePatientModal';
 const Patient = () => {
   let [Patients, setPatients] = useState([]);
   const [deletingPatient, setDeletingPatient] = useState(null);
-  let { data: patients, isLoading, refetch } = useQuery('patients', () => fetch(' https://powerful-plateau-90073.herokuapp.com/patient', {
+  let { data: patients, isLoading, refetch } = useQuery('patients', () => fetch(' https://hospital-management-9ou8.onrender.com/patient', {
     headers: {
 
       authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -26,7 +26,7 @@ const Patient = () => {
 
     const search = e.target.text.value;
 
-    fetch(` https://powerful-plateau-90073.herokuapp.com/patients?name=${search}`)
+    fetch(` https://hospital-management-9ou8.onrender.com/patients?name=${search}`)
       .then(res => res.json())
       .then(data => {
         setPatients(data)
@@ -121,4 +121,4 @@ const Patient = () => {
   );
 };
 
-export default Patient;
+export default Patient; 

@@ -32,7 +32,7 @@ const AddReceptionist = () => {
                    img:img
                }
                //send to your database
-               fetch(' https://powerful-plateau-90073.herokuapp.com/receptionist',{
+               fetch(' https://hospital-management-9ou8.onrender.com/receptionist',{
                    method:'POST',
                    headers:{
                        'content-type':'application/json',

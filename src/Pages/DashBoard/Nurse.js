@@ -8,7 +8,7 @@ import DeleteNurseModal from './DeleteNurseModal';
 const Nurse = () => {
   let [Nurses, setNurses] = useState([]);
   const [deletingNurse ,setDeletingNurse]=useState(null);
-  const {data:nurses,isLoading,refetch}=useQuery('nurses',()=>fetch(' https://powerful-plateau-90073.herokuapp.com/nurse',{
+  const {data:nurses,isLoading,refetch}=useQuery('nurses',()=>fetch(' https://hospital-management-9ou8.onrender.com/nurse',{
       headers:{
         
           authorization:`Bearer ${localStorage.getItem('accessToken')}`
@@ -22,7 +22,7 @@ const Nurse = () => {
     
     const search = e.target.text.value;
     
-    fetch(` https://powerful-plateau-90073.herokuapp.com/nurses?name=${search}`)
+    fetch(` https://hospital-management-9ou8.onrender.com/nurses?name=${search}`)
       .then(res => res.json())
       .then(data => {
         setNurses(data)
