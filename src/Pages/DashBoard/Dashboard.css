@@ -19,3 +19,11 @@
   .signOut{
     display: inline-flex;
   }
+  .flex{
+    display: flex;
+    
+  }
+
+  .d-none{
+    display: none;
+  }

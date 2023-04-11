@@ -1,0 +1,34 @@
+[
+    {
+        "text": "Dashboard",
+        "icon": "images/grid.svg"
+    },
+    {
+        "text": "Admin Profile",
+        "icon": "images/grid.svg"
+    },
+    {
+        "text": "Messages",
+        "icon": "images/message.svg"
+    },
+    {
+        "text": "Analytics",
+        "icon": "images/pie-chart.svg"
+    },
+    {
+        "text": "File Manager",
+        "icon": "images/folder.svg"
+    },
+    {
+        "text": "Orders",
+        "icon": "images/shopping-cart.svg"
+    },
+    {
+        "text": "Saved Items",
+        "icon": "images/heart.svg"
+    },
+    {
+        "text": "Settings",
+        "icon": "images/settings.svg"
+    }
+]

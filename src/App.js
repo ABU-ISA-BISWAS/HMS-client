@@ -4,7 +4,6 @@ import { ToastContainer } from 'react-toastify';
 import './App.css';
 import auth from './firebase.init';
 import useAdmin from './hooks/useAdmin';
-import About from './Pages/About/About';
 import Appointment from './Pages/Appointment/Appointment';
 import Accountant from './Pages/DashBoard/Accountant';
 import AddAccountant from './Pages/DashBoard/AddAccountant';
@@ -37,6 +36,9 @@ import RequireAdmin from './Pages/Login/RequireAdmin';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
 import Navbar from './Pages/Shared/Navbar';
+import About from './About';
+
+
 
 function App() {
   const [user] = useAuthState(auth);
