@@ -6,11 +6,13 @@ import Info from './Info';
 import MakeAppointment from './MakeAppointment';
 import Services from './Services';
 import Testimonials from './Testimonials';
+import Navbar from '../Shared/Navbar';
 
 
 const Home = () => {
     return (
         <div className='bg-gray-100 font-serif'>
+            <Navbar></Navbar>
             <Banner></Banner>
             <Info></Info>
             <Services></Services>

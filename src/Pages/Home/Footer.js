@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <footer className="footer footer-center p-4  text-base-content">
                 <div className='my-10 text-center'>
-                    <p>Copyright © 2022 - All right reserved (Musa-Isa) .</p>
+                    <p>Copyright © 2023 - All right reserved.</p>
                 </div>
             </footer>
         </footer>

@@ -94,7 +94,7 @@ const DashBoard = () => {
 						<span></span>
 					</button>
 				</div>
-				<div className="nav-menu">
+				<div>
 				{isExpanded ?<ul >
                 <li className='  font-serif text-xl text-purple-400 p-2 font-semi-bold  mb-2 hover:bg-gray-900'><Link to="/dashboard" >Progress Hospital</Link></li>
                 {
@@ -114,6 +114,9 @@ const DashBoard = () => {
                   <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/laboratorist"><span className='ml-2 mr-2'>Laboratorist</span></NavLink></li>
                   <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/accountant"><span className='ml-2 mr-2'>Accountant</span></NavLink></li>
                   <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/receptionist"><span className='ml-2 mr-2'>Receptionist</span></NavLink></li>
+                
+                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/appointments"><span className='ml-2 mr-2'>Appointments</span></NavLink></li>
+                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/payments"><span className='ml-2 mr-2'>Payments</span></NavLink></li>
                   <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><div className="dropdown ">
                     <label tabIndex={0} className=" ml-2 mr-2">Hospital Management 🔻</label>
                     <ul tabIndex={0} className="dropdown-content w-32 mt-1 bg-slate-900 ">
@@ -123,9 +126,7 @@ const DashBoard = () => {
                       <li className='text-slate-300 ml-3 font-serif text-sm  hover:bg-gray-700 duration-300'><a>Operation Report</a></li>
                     </ul>
                   </div></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/appointments"><span className='ml-2 mr-2'>Appointments</span></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/payments"><span className='ml-2 mr-2'>Payments</span></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/invoice"><span className='ml-2 mr-2'>Create Invoice</span></NavLink></li>
+                
 
 
                 </>
@@ -139,25 +140,25 @@ const DashBoard = () => {
                 
                 {
                   !admin && <>
-                    <li className='text-slate-300 font-serif text-sm mt-3 mb-6 hover:bg-gray-900'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to='/dashboard/myAppointment'> <img src={appointment} alt="" /> </NavLink></li>
-                    <li className='text-slate-300 font-serif text-sm mb-6 hover:bg-gray-900'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/review"><img src={review} alt="" /></NavLink></li>
-                    <li className='text-slate-300 font-serif text-sm mb-6 hover:bg-gray-900'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/history"><img src={history} alt="" /></NavLink></li>
+                    <li className='pl-1.5 text-slate-300 font-serif text-sm mt-3 mb-6 hover:bg-gray-900'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to='/dashboard/myAppointment'> <img src={appointment} alt="" /> </NavLink></li>
+                    <li className='pl-1.5 text-slate-300 font-serif text-sm mb-6 hover:bg-gray-900'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/review"><img src={review} alt="" /></NavLink></li>
+                    <li className='pl-1.5 text-slate-300 font-serif text-sm mb-6 hover:bg-gray-900'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/history"><img src={history} alt="" /></NavLink></li>
                   </>
                 }
                 {admin && <>
 
-                  <li className='text-slate-300 font-serif text-sm mt-3 mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/users"><img src={user} alt="" /></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/patient"><img src={patient} alt="" /></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/doctor"><img src={doctor} alt="" /></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/nurse"><img src={nurse} alt="" /></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/pharmacist"><img src={pharmacist} alt="" /></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/laboratorist"><img src={laboratorist} alt="" /></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/accountant"><img src={accountant} alt="" /></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/receptionist"><img src={receptionist} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mt-3 mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/users"><img src={user} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/patient"><img src={patient} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/doctor"><img src={doctor} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/nurse"><img src={nurse} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/pharmacist"><img src={pharmacist} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/laboratorist"><img src={laboratorist} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/accountant"><img src={accountant} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/receptionist"><img src={receptionist} alt="" /></NavLink></li>
                   
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/appointments"><img src={appointment} alt="" /></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/payments"><img src={payments} alt="" /></NavLink></li>
-                  <li className='text-slate-300  font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><div className="dropdown ">
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/appointments"><img src={appointment} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/payments"><img src={payments} alt="" /></NavLink></li>
+                  <li className='text-slate-300 pl-1.5 font-serif text-sm mb-4 hover:bg-gray-900 duration-300'><div className="dropdown ">
                     <label tabIndex={0} className=" ml-2 mr-2"><img src={hospital} alt="" /> 🔻</label>
                     <ul tabIndex={0} className="dropdown-content w-32 mt-1 bg-slate-900 ">
                       <li className='text-slate-300 ml-3 font-serif text-sm  hover:bg-gray-700 duration-300'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to="/dashboard/bedAllotment"><span >Bed Allotment</span></NavLink></li>

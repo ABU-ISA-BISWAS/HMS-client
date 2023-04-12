@@ -10,7 +10,7 @@
 	transition: 0.4s;
 }
 .side-nav-container-NX {
-	width: 38px;
+	width: 40px;
 }
 @media screen and (max-width: 480px) {
 	.side-nav-container-NX {
@@ -82,6 +82,9 @@
 /* ///////////////////// */
 .hamburger-out {
 	margin-left: 5px;
+}
+.hamburger-in {
+	margin-left: 10px;
 }
 .hamburger-out:hover span:nth-child(1) {
 	width: 18px;
@@ -158,3 +161,8 @@
 .logout-icon:hover {
 	background-color: var(--primary);
 }
+
+
+
+
+

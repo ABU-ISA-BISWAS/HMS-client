@@ -9,6 +9,8 @@ import useAdmin from '../../hooks/useAdmin';
 import useToken from '../../hooks/useToken';
 import Loading from '../Shared/Loading';
 import hospital from '../../assets/icons/hospital.png';
+import Navbar from '../Shared/Navbar';
+
 
 
 const Login = () => {
@@ -62,7 +64,10 @@ const Login = () => {
     }
 
     return (
-        <div className='flex  '>
+        <div>
+            <Navbar></Navbar>
+            <div className='flex loginBg'>
+            
 
 
 
@@ -70,7 +75,8 @@ const Login = () => {
 
                 <div class="card w-96 mb-32">
                     <div class="card-body">
-                        <h2 class="text-left text-3xl font-extrabold text-secondary "><img  src={hospital} alt="" /> PROGRESS HOSPITAL</h2>
+                        <h2 class="text-left text-3xl font-extrabold text-secondary "><img  src={hospital} alt="" /></h2>
+                        <p className='text-left text-xl font-extrabold text-secondary'>Login to your account..</p>
 
                         <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -150,9 +156,10 @@ const Login = () => {
             </div>
 
             <div>
-                <img style={{ width: "1000px" }} className='p-10 max-h-screen  ' src="https://i.ibb.co/4scwSbk/hms.png" alt="" />
+                
             </div>
 
+        </div>
         </div>
     );
 };

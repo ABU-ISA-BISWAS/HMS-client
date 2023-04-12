@@ -37,6 +37,8 @@ import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
 import Navbar from './Pages/Shared/Navbar';
 import About from './About';
+import Fpage from './Pages/DashBoard/Fpage';
+import AdminLogin from './Pages/DashBoard/AdminLogin';
 
 
 
@@ -95,7 +97,10 @@ function App() {
           <Route path='bedAllotment' element={<RequireAdmin><BedAllotment></BedAllotment></RequireAdmin>}></Route>
           
         </Route>
-        <Route path='/' element={<Login></Login>}></Route>
+        
+        <Route path='/' element={<Fpage></Fpage>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/adminLogin' element={<AdminLogin></AdminLogin>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
       </Routes>
       <ToastContainer></ToastContainer>

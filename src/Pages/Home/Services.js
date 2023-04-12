@@ -42,9 +42,9 @@ const Services = () => {
                 }
             </div>
             <div>
-                <div className="hero min-h-screen px-16">
+                <div className="hero min-h-screen ">
                     <div className="hero-content flex-col lg:flex-row">
-                        <img alt='' src={treatment} className="max-w-sm rounded-lg shadow-2xl" />
+                        <img alt='' src={treatment} className="min-w-sm lg:w-80 rounded-lg shadow-2xl" />
                         <div>
                             <h1 className="text-5xl font-bold">Exceptional Dental Care, on Your Terms</h1>
                             <p className="py-6">In our cheerful dental practice, we offer high-quality dental care. Spearwood Dentist Dr Alexis Ong and her team provide gentle dentistry to all ages. Exceptional Dental Care is a full-service dental office. Therefore, you won't have to run all over town to get the dental treatments you want and need. Plus, our care is affordable.</p>

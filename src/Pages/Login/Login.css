@@ -1,0 +1,65 @@
+.fpage{
+    background-image: url('../../assets/images/fpage.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+   
+    background-size:auto;
+}
+.box{
+    display: flex;
+    padding: 150px;
+    margin-left: 380px;
+    
+}
+.box-child:hover{
+   transform: scale(1.1);
+   transition-duration: .5s;
+   
+   
+}
+.box-child{
+    background: rgba(10, 141, 241, 0.7);
+}
+.logo{
+    margin-top: 16px;
+    margin-left:64px ;
+}
+.title{
+    font-weight: bold;
+    font-size: 28px;
+    color: whitesmoke;
+    margin-left: 24px;
+}
+.title2{
+    font-weight: bold;
+    font-size: 28px;
+    color: whitesmoke;
+    margin-left: 10px;
+   
+}
+.logo{
+    margin-top: 16px;
+    margin-left:60px ;
+}
+
+@media screen and (max-width: 480px) {
+	.box{
+        display: flex;
+        padding: 20px;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .title{
+        font-weight: bold;
+        font-size: 22px;
+        color: whitesmoke;
+        margin-left: 24px;
+    }
+    .title2{
+        font-weight: bold;
+        font-size: 22px;
+        color: whitesmoke;
+        margin-left: 10px;
+       
+    }
+  }
