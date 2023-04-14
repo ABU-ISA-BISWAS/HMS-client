@@ -3,7 +3,7 @@ import React from 'react';
 const Service = ({ service,setTreatment }) => {
     const {name,slots,price}=service;
     return (
-        <div class="card w-96 h-60 bg-base-100 shadow-lg font-serif text-center">
+        <div class="card lg:w-96 sm:w-1/2 h-60 bg-base-100 shadow-lg font-serif text-center">
             <div class="card-body">
                 <p class=" text-secondary text-center text-2xl font-bold">{name}</p>
                 <p>

@@ -35,7 +35,7 @@ const Banner = () => {
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img alt='' src= "https://i.ibb.co/Z1CrHx2/young-female-doctor-posing-corridor-hospital.jpg" className="min-w-sm w-80 rounded-lg shadow-2xl" />
                 <div>
-                    <h1 className='text-6xl font-thin  font-mono text-green-600 mb-4'>Progress Hospital</h1>
+                    <h1 className='text-6xl font-thin  font-mono text-green-600 mb-4'>Hospital</h1>
                     <h1 className="text-2xl font-semibold">Your New Smile Start Here</h1>
                     
                     <button className="btn mt-4 btn-primary uppercase text-white font-bold bg-gradient-to-r from-secondary to primary"> <Link to="/appointment">Get Started</Link> </button>

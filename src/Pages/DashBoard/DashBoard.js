@@ -23,6 +23,7 @@ import accountant from "../../assets/image/accountant.png"
 import receptionist from "../../assets/image/receptionist.png"
 import hospital from "../../assets/image/hospital.png"
 import payments from "../../assets/image/payments.png"
+import Loading from "../Shared/Loading";
 
 
 
@@ -57,7 +58,7 @@ const DashBoard = () => {
               <img className='h-16 w-full' src={HospitalIcon} alt="" />
             </div>
             <div className='mt-2'>
-              {!admin ? <h2 className='ml-4 text-4xl font-serif mb-6 text-purple-600 '>Welcome, {user.displayName}</h2> : <h2 className=' text-4xl font-serif text-purple-600 '>Welcome to DashBoard</h2>}
+              {!admin && user ? <h2 className='ml-4 text-4xl font-serif mb-6 text-purple-600 '>Welcome, {user.displayName}</h2> :   <h2 className=' text-4xl font-serif text-purple-600 '>Welcome to DashBoard</h2>}
             </div>
 
 
@@ -96,7 +97,7 @@ const DashBoard = () => {
 				</div>
 				<div>
 				{isExpanded ?<ul >
-                <li className='  font-serif text-xl text-purple-400 p-2 font-semi-bold  mb-2 hover:bg-gray-900'><Link to="/dashboard" >Progress Hospital</Link></li>
+                <li className='  font-serif text-xl text-purple-400 p-2 font-semi-bold  mb-2 hover:bg-gray-900'><Link to="/dashboard" >Hospital</Link></li>
                 {
                   !admin && <>
                     <li className='text-slate-300 font-serif text-sm mt-3 mb-6 hover:bg-gray-900'><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to='/dashboard/myAppointment'><span className='ml-2 mr-2'>My Appointments</span></NavLink></li>

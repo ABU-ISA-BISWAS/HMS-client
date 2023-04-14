@@ -39,6 +39,7 @@ import Navbar from './Pages/Shared/Navbar';
 import About from './About';
 import Fpage from './Pages/DashBoard/Fpage';
 import AdminLogin from './Pages/DashBoard/AdminLogin';
+import NoUsNav from './NoUsNav';
 
 
 
@@ -49,10 +50,14 @@ function App() {
     
     <div className=''>
       
-      {user && !admin && <Navbar></Navbar>}
+      {user  && !admin && <Navbar></Navbar>}
+      {!user  && <NoUsNav></NoUsNav>}
       <Routes>
        {
         !admin &&  <Route path='/home' element={<Home></Home>}></Route>
+       }
+       {
+        !user &&  <Route path='/home' element={<Home></Home>}></Route>
        }
        {
         !admin && <Route path='/about' element={<About></About>}></Route>

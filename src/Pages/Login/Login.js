@@ -65,7 +65,7 @@ const Login = () => {
 
     return (
         <div>
-            <Navbar></Navbar>
+            
             <div className='flex loginBg'>
             
 

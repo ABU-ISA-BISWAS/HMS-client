@@ -11,7 +11,7 @@ const AppointmentBanner = ({date,setDate}) => {
          <div class="hero min-h-screen ">
             
             <div class="hero-content flex-col lg:flex-row-reverse">
-                <img src="https://i.ibb.co/4scwSbk/hms.png" alt="" class="max-w-sm rounded-lg shadow-xl" />
+                <img className='sm:w-1/3 lg:h-92' src="https://i.ibb.co/4scwSbk/hms.png" alt="" class="max-w-sm rounded-lg shadow-xl" />
                 <div className='border-2 border-blue-400'>
                   <DayPicker
                    mode="single"

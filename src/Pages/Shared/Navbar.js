@@ -23,11 +23,9 @@ const Navbar = () => {
             !admin && user ? <>
 
                 <li className='text-white font-serif'><Link to="/home">Home</Link></li>
-
                 <li className='text-white font-serif'><Link to="/appointment">Appointment</Link></li>
-
                 <li className='text-white font-serif'><Link to='/dashboard'>DashBoard</Link></li>
-                {user ? <button onClick={logout} className="float-right pt-1.5 ml-12 h-10 w-10 "><img className='w-4 h-4 ' src={signout} alt="aa" /></button> : <></>}
+                {user ? <button onClick={logout} className="float-right pt-1.5 ml-12 h-10 w-10 text-red-400 font-serif ">SignOut</button> : <></>}
             </> : <> <li className=' font-serif text-white '><Link to="/home">Home</Link></li>   <div className="mt-3 ml-2  dropdown dropdown-hover ">
                 <label tabIndex={0} className="   font-serif text-white pt-4">Login</label>
                 <ul tabIndex={0} className="dropdown-content menu p-2  shadow bg-blue-200  w-40">
@@ -62,12 +60,12 @@ const Navbar = () => {
                     {menuItems}
                 </ul>
             </div>
-            <div className="navbar-end">
+            {/* <div className="navbar-end">
                 <label tabindex="1" for="dashboard-sidebar" className="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
 
-            </div>
+            </div> */}
         </div>
     );
 };
